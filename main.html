@@ -12,8 +12,17 @@
 		let b;
 		function secondHighest(arr) {
 			//Write your code here
+			if(arr.length<=1){
+				return -Infinity;
+			}
 			for(let i=0; i<arr.length-1; i++){
-				if(arr[i]>=arr[i+1]){
+				if(arr[0] != arr[i]){
+					
+				}
+				return -Infinity;
+			}
+			for(let i=0; i<arr.length-1; i++){
+				if(arr[i]>arr[i+1]){
 					b= a;
 					a = arr[i];
 				}else{
@@ -26,12 +35,12 @@
 		}
 
 		function Main() {
-			var n = prompt("Enter the number of elements");
+			// var n = prompt("Enter the number of elements");
 			var arr = [];
 			for (var i = 0; i < n; i++) {
-				arr[i] = prompt("Enter element " + (i+1));
+				// arr[i] = prompt("Enter element " + (i+1));
 			}
-			alert(secondHighest(arr));
+			// alert(secondHighest(arr));
 		}
 		Main();
 	</script>
